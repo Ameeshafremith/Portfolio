@@ -1,0 +1,720 @@
+body{
+    position: relative;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*===========================================================Hero Section===============================================================*/
+.Hero{
+    height: 780px;
+    border: 1px solid transparent;
+    position: relative;
+}
+
+.Hero-bg{
+    position: relative;
+    background-image: url("assets/background texture remake.jpeg");
+    background-size: cover;
+    height: 738px;
+    opacity: 0.6;
+    border: 1px solid transparent;
+    margin-top: 20px;
+}
+
+#nav_clicks{
+    width: 800px;
+    height: 44px;
+    margin-right: -50px;
+}
+
+.nav_panel{
+    display: flex;
+    width: 800px;
+    height: 41px;
+    justify-content: space-evenly;
+}
+
+#logo{
+    text-decoration: none;
+    color: #FFC300;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Sen", sans-serif;
+}
+
+.nav > .navbar > div > ul > li > a{
+    text-decoration: none;
+    color: white;
+    font-weight: 480;
+    font-family: "Inter", sans-serif;
+    transition-duration: 500ms;
+    font-size: 18px;
+}
+
+.navbar{
+    z-index: 1;
+    background-color: black;
+    height: 10%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 15px 9%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid transparent;
+}
+
+ul{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 0;
+}
+
+ul > li{
+    list-style: none;
+    margin-left: 35px;
+    margin-top: 15px;
+}
+
+.navbar > div > ul > li > a:hover{
+    color: #FFC300;
+    text-shadow: 0 0 6px #FFC300;
+}
+
+
+/*---------------------------------------Left Hero Section----------------------------------------*/
+.left.hero{
+    display: flex;
+    position: relative;
+    width: 445px;
+    height: 441px;
+    margin: -605px 0px 0px 95px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.left.hero:hover {
+    box-shadow:
+        0 0 20px #FFC300,
+        0 0 40px rgba(255, 195, 0, 0.6),
+        0 0 60px rgba(255, 195, 0, 0.4);
+}
+
+.left.hero img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease;
+}
+
+.left.hero:hover img {
+    transform: scale(1.1);
+}
+
+.left.hero:hover {
+    animation: glowPulse 1.0s infinite alternate;
+}
+
+@keyframes glowPulse {
+    from {
+        box-shadow: 0 0 15px #FFC300;
+    }
+    to {
+        box-shadow: 0 0 40px #FFC300;
+    }
+}
+
+#profile image{
+    display: flex;
+    position: fixed;
+}
+
+
+/*---------------------------------------Right Hero Section----------------------------------------*/
+.right-hero{
+    margin-top: -400px;
+    margin-left: 610px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    opacity: 1.0;
+    position: relative;
+}
+
+#text-span-1{
+    color: #FFC300;
+}
+
+#text-name {
+    font-size: 64px;
+    font-family: "Sen", sans-serif;
+    font-weight: 1000;
+    margin-top: -15px;
+
+    background: linear-gradient(120deg,#ffffff 40%,#FFC300 50%,#ffffff 60%);
+    background-size: 200% auto;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    animation: shineText 8s linear infinite;
+}
+
+@keyframes shineText {
+    0% {
+        background-position: 200% center;
+    }
+    100% {
+        background-position: -200% center;
+    }
+}
+
+#text-span-3{
+    color: white;
+}
+
+#text-paragraph{
+    margin-top: 12px;
+    font-size: 18px;
+}
+
+.Animation-section{
+    color: #FFC300;
+}
+
+#button-section{
+    margin-top: 50px;
+}
+
+.Hi-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 115px;
+    height: 30px;
+    background: #FFC300;
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    font-family: "Sen", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 30px;
+    cursor: pointer;
+    position: relative;
+    overflow: visible;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 15px #FFC300, 0 0 30px rgba(255, 195, 0, 0.6);
+}
+
+.Hi-button:hover {
+    box-shadow: 0 0 8px #FFC300, 0 0 15px rgba(255, 195, 0, 0.4);
+}
+
+.Hi-button:active {
+    transform: scale(0.95);
+    background: #9c7502;
+}
+
+/*.Hi-button span.ripple {
+    position: absolute;
+    border-radius: 50%;
+    transform: scale(0);
+    background: rgba(255, 255, 255, 0.6);
+    animation: ripple 0.6s linear;
+}
+
+@keyframes ripple {
+    to {
+        transform: scale(4);
+        opacity: 0;
+    }
+}*/
+
+.typewriter::after {
+    content: "Web Developer";
+    color: #FFC300;
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
+    animation: words 12s infinite;
+}
+
+@keyframes words {
+    0%  { content: "W"; }
+    3%  { content: "We"; }
+    6%  { content: "Web"; }
+    9%  { content: "Web D"; }
+    12%  { content: "Web De"; }
+    15%  { content: "Web Dev"; }
+    18%  { content: "Web Deve"; }
+    21%  { content: "Web Devel"; }
+    24%  { content: "Web Develo"; }
+    27%  { content: "Web Develop"; }
+    30%  { content: "Web Develope"; }
+    33%  { content: "Web Developer"; }
+
+    36%  { content: "U"; }
+    39%  { content: "UI"; }
+    42%  { content: "UI U"; }
+    45%  { content: "UI UX"; }
+    48%  { content: "UI UX D"; }
+    51%  { content: "UI UX De"; }
+    54%  { content: "UI UX Des"; }
+    57%  { content: "UI UX Desi"; }
+    60%  { content: "UI UX Desig"; }
+    63%  { content: "UI UX Design"; }
+    66%  { content: "UI UX Designe"; }
+    69%  { content: "UI UX Designer"; }
+
+    72%  { content: "P"; }
+    75%  { content: "Pr"; }
+    78%  { content: "Pro"; }
+    81%  { content: "Prog"; }
+    84%  { content: "Progr"; }
+    87%  { content: "Progra"; }
+    90%  { content: "Program"; }
+    93%  { content: "Programm"; }
+    96%  { content: "Programme"; }
+    100%  { content: "Programmer"; }
+}
+
+#text-paragraph{
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+/*----------------------------------Hero footer Section-----------------------------------*/
+.hero-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20px;
+
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.6);
+    border-top: 1px solid rgba(255, 195, 0, 0.3);
+    border-bottom: 1px solid rgba(255, 195, 0, 0.3);
+
+    display: flex;
+    align-items: center;
+}
+
+.scroll-track {
+    display: flex;
+    white-space: nowrap;
+    font-family: "Inter", monospace;
+    font-size: 12px;
+    color: white;
+    animation: scrollLeft 20s linear infinite;
+}
+
+@keyframes scrollLeft {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/*==========================================================About Section===========================================================*/
+.About-me {
+    display: flex;
+    position: relative;
+    background-color: #101010;
+    height: 820px;
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url("assets/background texture 3.jpeg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.About-me-bg{
+    background-image: url("assets/background texture 3.jpeg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+    min-height: 100vh;
+}
+
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 90px 7%;
+    width: 1347px;
+}
+
+/*---------------------------------------About Left---------------------------------------*/
+.about-left{
+    color: white;
+    margin-top: 300px;
+}
+
+#About-me-text{
+    font-family: "Roboto" monospace;
+    font-weight: 700;
+    font-size: 40px;
+    margin-top: -210px;
+}
+#text1{
+    background: linear-gradient(
+            120deg,
+            white 30%,
+            #FFC300 50%,
+            white 70%
+    );
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    animation: aboutShine 8s linear infinite;
+}
+
+#text2{
+    background: linear-gradient(
+            120deg,
+            #FFC300 30%,
+            rgba(255,255,255,1) 50%,
+            #FFC300 70%
+        );
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation-delay: 0.6s;
+
+    animation: aboutShine 6s linear infinite;
+}
+
+@keyframes aboutShine {
+    0% {
+        background-position: 200% center;
+    }
+    100% {
+        background-position: -200% center;
+    }
+}
+
+#about-me-paragraph {
+    font-family: "Sen", sans-serif;
+    font-weight: 500;
+    font-size: 23px;
+    width: 630px;
+}
+
+.span-color-change{
+    color: #FEE9A5;
+}
+
+
+/*---------------------------------------About Right-----------------------------------------*/
+.about-right {
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+}
+
+.about-right img{
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+}
+
+.about-right:hover {
+    box-shadow:
+        0 0 20px #FFC300,
+        0 0 40px rgba(255, 195, 0, 0.6),
+        0 0 60px rgba(255, 195, 0, 0.4);
+}
+
+.about-right img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease;
+}
+
+.about-right:hover img {
+    transform: scale(1.1);
+}
+
+.about-right:hover {
+    animation: glowPulse 1.0s infinite alternate;
+}
+
+@keyframes glowPulse {
+    from {
+        box-shadow: 0 0 15px #FFC300;
+    }
+    to {
+        box-shadow: 0 0 40px #FFC300;
+    }
+}
+
+
+/*==========================================================Projects Section===========================================================*/
+
+.Projects{
+    display: flex;
+    position: relative;
+   /* background-color: #101010;*/
+    height: 820px;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("assets/background texture remake.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /*border: 2px solid white;*/
+}
+
+.Project-contain{
+    display: flex;
+    /*align-items: center;*/
+    justify-content: space-between;
+    padding: 90px 7%;
+    width: 100%;
+    height: 100%;
+    /*border: 2px solid red;*/
+}
+
+
+/*---------------------------------------Project Header-----------------------------------------*/
+.Project-contain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#Topic-text {
+    display: flex;
+    justify-content: space-evenly;
+    font-family: "Sen", sans-serif;
+    font-weight: 1000;
+    font-size: 40px;
+    margin-top: -30px;
+    height: 60px;
+    width: 900px;
+    align-items: center;
+/*    border: 2px solid green;*/
+}
+
+
+#Topic-text span {
+    opacity: 0;
+    display: inline-block;
+    transform: translateY(10px);
+    animation: typeLetter 3.0s linear infinite;
+}
+
+@keyframes typeLetter {
+    0%, 10% { opacity: 0; transform: translateY(10px); }
+    20%, 80% { opacity: 1; transform: translateY(0); }
+    90%, 100% { opacity: 0; transform: translateY(-10px); }
+}
+
+#Topic-text span:nth-child(1) {
+    animation-delay: 0s;
+}
+#Topic-text span:nth-child(2) {
+    animation-delay: 0.3s;
+}
+#Topic-text span:nth-child(3) {
+    animation-delay: 0.6s;
+}
+#Topic-text span:nth-child(4) {
+    animation-delay: 0.9s;
+}
+#Topic-text span:nth-child(5) {
+    animation-delay: 1.2s;
+}
+#Topic-text span:nth-child(6) {
+    animation-delay: 1.5s;
+}
+#Topic-text span:nth-child(7) {
+    animation-delay: 1.8s;
+}
+#Topic-text span:nth-child(8) {
+    animation-delay: 2.1s;
+}
+
+#Topic-text span:nth-child(odd) {
+    color: white;
+    text-shadow: 0 0 3px rgba(255,255,255,0.6);
+}
+#Topic-text span:nth-child(even) {
+    color: #FFC300;
+    text-shadow: 0 0 3px rgba(255,195,0,0.6);
+}
+
+
+/*---------------------------------------Project Body-----------------------------------------*/
+.projects {
+    width: 1100px;
+    height: 600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 65px 140px;
+    margin: 60px auto 0 auto;
+}
+
+.projects div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    display: block;
+}
+
+.projects div {
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    transition: transform 0.2s, box-shadow 0.3s;
+}
+
+.projects div:hover {
+    transform: translateY(-10px);
+    box-shadow: 8px 12px 5px rgba(255, 195, 0, 0.5);
+}
+
+
+
+/*===================================================Skills & Technologies Section=====================================================*/
+
+.Skills{
+    display: flex;
+    position: relative;
+    background-color: black;
+    min-height: 820px;
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url("assets/background texture 3.jpeg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+/*    border: 2px solid white;*/
+    color: white;
+    font-family: "Sen", sans-serif;
+}
+
+.Skills-contain{
+    display: flex;
+    justify-content: space-between;
+    padding: 90px 7%;
+    width: 100%;
+    height: 100%;
+/*    border: 2px solid red;*/
+    align-items: left;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/*---------------------------------------Skills Header-----------------------------------------*/
+#Skills-topic {
+    display: flex;
+    font-family: "Sen", sans-serif;
+    font-weight: 1000;
+    font-size: 40px;
+    margin-top: -30px;
+    height: 60px;
+    width: 900px;
+    align-items: center;
+    color: white;
+/*    border: 2px solid green;*/
+    justify-content: center;
+}
+
+#span2 {
+    color: #FFC300;
+}
+
+
+/*---------------------------------------Skills Left Section------------------------------------*/
+.Skill-name{
+    font-family: "Sen", sans-serif;
+    font-weight: 1000;
+    font-size: 30px;
+}
+
+#skill-name-span-2{
+    color: #FFC300;
+}
+
+.Skill-desc{
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+}
+
+#desc-span-2{
+    font-weight: 700;
+}
+
+.left-skills{
+    border: 2px solid yellow;
+    margin-left: -720px;
+    margin-top: 60px;
+}
+
+.skills{
+    height: 170px;
+}
+
+
+/*---------------------------------------Skills Right Section------------------------------------*/
+.right-skills{
+    text-align: Right;
+    border: 2px solid white;
+    margin-right: -500px;
+    margin-top: 50px;
+}
+
+.tech-name{
+    font-family: "Sen", sans-serif;
+    font-weight: 1000;
+    font-size: 30px;
+}
+
+#tech-name-span-2{
+    color: #FFC300;
+}
+
+.Tech-desc{
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+}
+
+#desc-span-2-2{
+    font-weight: 700;
+}
+
+.techs{
+    height: 170px;
+}
+
+
+/*---------------------------------------Skills footer Section------------------------------------*/
+.skills-footer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 20px;
+
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.6);
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+
+
+
